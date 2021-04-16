@@ -24,21 +24,19 @@ The project is divided into 3 modules(Auth, User and Ticket). Below are the publ
 ## Usage
 
 #### Visitors Flow
-
 1. Register a user
 2. Login with the user
 3. Create Ticket
 4. Logout
 
 #### Admin Flow
-
 1. Register a user with admin role
 2. Login now
 3. List created tickets
 
 ## Thanks To
 
-The coding standards/Design Patterns used in this project are inspired from:
+The Coding Standards/Design Patterns used in this project are inspired from:
 
 1. https://bit.ly/3uTDyvb
 2. https://bit.ly/3tqi0Gr
