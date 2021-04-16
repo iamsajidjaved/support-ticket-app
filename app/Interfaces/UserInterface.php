@@ -17,6 +17,7 @@ interface UserInterface
      * Update user's first name and last name
      *
      * @param App\Http\Requests\UserRequest $request
+     * @param App\Models\User $user
      */
     public function update(UserRequest $request, $user);
 }
