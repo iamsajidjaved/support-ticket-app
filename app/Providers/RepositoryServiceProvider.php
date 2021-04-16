@@ -15,7 +15,12 @@ class RepositoryServiceProvider extends ServiceProvider
 
         $this->app->bind(
             'App\Interfaces\TicketInterface',
-            'App\Repositories\TicketRepostitory'
+            'App\Repositories\TicketRepository'
+        );
+
+        $this->app->bind(
+            'App\Interfaces\AuthInterface',
+            'App\Repositories\AuthRepository'
         );
     }
 }

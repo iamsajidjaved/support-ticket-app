@@ -18,8 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('v1')->group(function () {
     Route::prefix('auth')->group(function () {
-        Route::post('signup', [AuthController::class, 'signup']);
-        Route::post('signin', [AuthController::class, 'signin']);
+        Route::post('login', [AuthController::class, 'login']);
         Route::get('logout', [AuthController::class, 'logout']);
     });
 

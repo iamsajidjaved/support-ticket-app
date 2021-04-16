@@ -27,6 +27,7 @@ class UserController extends Controller
      *
      * @method  POST api/v1/user/user
      * @access  public
+     * 
      * @param App\Http\Requests\UserRequest $request
      * @return \Illuminate\Http\JsonResponse
      */
@@ -40,6 +41,7 @@ class UserController extends Controller
      *
      * @method  PUT api/v1/user/user
      * @access  public
+     * 
      * @param App\Http\Requests\UserRequest $request
      * @return \Illuminate\Http\JsonResponse
      */

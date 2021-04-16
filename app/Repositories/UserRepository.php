@@ -19,14 +19,14 @@ class UserRepository implements UserInterface
     public function register(UserRequest $request)
     {
         try {
-            User::create([
+            $user = User::create([
                 'first_name' => $request->first_name,
                 'last_name' => $request->last_name,
                 'email' => $request->email,
                 'password' => Hash::make($request->password),
                 'role' => $request->role,
             ]);
-            return $this->success("User created", 201);
+            return $this->success("User created", $user, 201);
         } catch (\Exception $e) {
             return $this->error($e->getMessage(), $e->getCode());
         }
@@ -42,7 +42,7 @@ class UserRepository implements UserInterface
             $user->first_name = $request->first_name;
             $user->last_name = $request->last_name;
             $user->save();
-            return $this->success("User updated", 200);
+            return $this->success("User updated", $user, 200);
         } catch (\Exception $e) {
             return $this->error($e->getMessage(), $e->getCode());
         }

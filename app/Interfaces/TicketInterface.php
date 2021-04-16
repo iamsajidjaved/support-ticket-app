@@ -8,14 +8,14 @@ use App\Models\User;
 interface TicketInterface
 {
     /**
-     * Register a new user
+     * Create a new ticket
      *
      * @param App\Http\Requests\TicketRequest $request
      */
     public function store(TicketRequest $request);
 
     /**
-     * Update user's first name and last name
+     * List all tickets
      *
      * @param App\Models\User $user
      */

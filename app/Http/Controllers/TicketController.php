@@ -26,6 +26,9 @@ class TicketController extends Controller
     /**
      * Store a new ticket
      *
+     * @method  POST api/v1/support/tickets
+     * @access  public
+     *
      * @param App\Http\Requests\TicketRequest $request
      * @return \Illuminate\Http\JsonResponse
      */
@@ -36,6 +39,9 @@ class TicketController extends Controller
 
     /**
      * List all tickets
+     * 
+     * @method  GET api/v1/support/tickets
+     * @access  public
      *
      * @param App\Models\User $user
      * @return \Illuminate\Http\JsonResponse
