@@ -1,15 +1,17 @@
 ## Requirements For Setup
 
 1. Composer
-2. PHP
-3. MySQL
+2. Git
+3. PHP
+4. MySQL
 
 ## Setup Guide
 
-1. Clone the project: `https://github.com/iamsajidjaved/support-ticket-app.git`
-2. Go to the project repository and install the dependencies by running this command `composer install`
-3. Setup Database: Create a copy of `env.example` which is located in the root of the project and rename the copy to `.env`
-4. Now migrate migrations by running a command `php artisan migrate`
+1. Clone the project: `git clone https://github.com/iamsajidjaved/support-ticket-app.git`
+2. Install dependencies: Go to the project repository and install the dependencies by running this command `composer install`
+3. Connect Database: Create a copy of `env.example` which is located in the root of the project and rename the copy to `.env`. Then open .env file and add database credientials as shown in this [Screenshot](https://prnt.sc/11ie92c)
+4. Create Tables: Now migrate migrations by running a command `php artisan migrate`
+5. JWT: Generate JWT secret by running this command `php artisan jwt:secret`
 
 ## APIs Documentation
 
@@ -19,3 +21,17 @@ The project is divided into 3 modules(Auth, User and Ticket). Below are the publ
 2. [User](https://documenter.getpostman.com/view/15404697/TzJrCeZW)
 3. [Ticket](https://documenter.getpostman.com/view/15404697/TzJrBe3C)
 
+## Usage
+
+#### Visitors Flow
+
+1. Register a user
+2. Login with the user
+3. Create Ticket
+4. Logout
+
+#### Admin Flow
+
+1. Register a user with admin role
+2. Login now
+3. List created tickets
