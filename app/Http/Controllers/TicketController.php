@@ -39,7 +39,7 @@ class TicketController extends Controller
 
     /**
      * List all tickets
-     * 
+     *
      * @method  GET api/v1/support/tickets
      * @access  public
      *
