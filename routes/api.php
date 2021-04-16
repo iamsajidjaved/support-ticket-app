@@ -25,7 +25,7 @@ Route::prefix('v1')->group(function () {
 
     Route::prefix('user')->group(function () {
         Route::post('user', [UserController::class, 'register']);
-        Route::put('user', [UserController::class, 'updateName']);
+        Route::put('user', [UserController::class, 'update']);
     });
 
     Route::prefix('support')->group(function () {
