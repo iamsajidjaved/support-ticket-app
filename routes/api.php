@@ -22,10 +22,8 @@ Route::prefix('v1')->group(function () {
         Route::get('logout', [AuthController::class, 'logout']);
     });
 
-    Route::prefix('user')->group(function () {
-        Route::post('user', [UserController::class, 'register']);
-        Route::put('user', [UserController::class, 'update']);
-    });
+    Route::post('users', [UserController::class, 'register']);
+    Route::put('users', [UserController::class, 'update']);
 
     Route::prefix('support')->group(function () {
         Route::post('tickets', [TicketController::class, 'store']);
