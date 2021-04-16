@@ -35,3 +35,10 @@ The project is divided into 3 modules(Auth, User and Ticket). Below are the publ
 1. Register a user with admin role
 2. Login now
 3. List created tickets
+
+## Thanks To
+
+The coding standards/Design Patterns used in this project are inspired from:
+
+1. https://bit.ly/3uTDyvb
+2. https://bit.ly/3tqi0Gr
